@@ -2,11 +2,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 plt.rcParams['figure.figsize'] = (12.0, 9.0)
 
+
 def noise_shape(v,p,a):
 	return ((np.power(v,p)+a*v)/(1+a))*noise
 
 def g_f(i):
-	return 0*np.power(i,2)*np.sin(i*10)+100*(i-0.3)*(i-0.6)*i
+	return 100*(i-0.3)*(i-0.6)*i
 
 n=1000
 noise=20
